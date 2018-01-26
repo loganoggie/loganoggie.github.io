@@ -1,0 +1,19 @@
+body {
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-family: helvetica;
+    color: white;
+    text-align: center;
+    font-size: 6
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+
+}
