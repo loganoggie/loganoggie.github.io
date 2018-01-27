@@ -351,6 +351,10 @@ a:focus, a:hover, a:active {
   background-color: #2C3E50 !important;
 }
 
+.bg-third {
+    background-color: #ffffff !important;
+}
+
 .text-primary {
   color: #18BC9C !important;
 }
