@@ -22,16 +22,24 @@
 
 <body>
 
+  <!-- Facebook Plugin -->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0"
+    nonce="szYI7MZY"></script>
+
+
+
+  <!-- Page Content -->
   <div class="d-flex" id="wrapper">
 
     <!-- Sidebar -->
     <div class="bg-dark border-right text-light nav-tabs" id="sidebar-wrapper">
-      <div class="sidebar-heading list-group-flush"> 
-          xLogan
+      <div class="sidebar-heading list-group-flush">
+        xLogan
       </div>
 
       <div class="nav nav-tabs list-group ">
-        
+
         <a href="#Spotify" data-toggle="tab" class="active list-group-item list-group-item-action bg-dark text-light">
           <i class="fa fa-spotify"></i> &nbsp | &nbsp
           Spotify
@@ -72,7 +80,7 @@
           LinkedIn
         </a>
 
-        
+
 
       </div>
     </div>
@@ -81,63 +89,100 @@
     <!-- Page Content -->
     <div id="page-content-wrapper">
 
+      <!-- Menu Toggler -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
         <button class="btn btn-light" id="menu-toggle">
           <span class="navbar-toggler-icon"></span>
         </button>
       </nav>
 
+      <!-- Profile Tab Contents -->
       <div class="container-fluid">
-        <h1 class="mt-4">xLogan</h1>
-        <br/>
+        <br />
+        <!-- Spotify -->
         <div class=tab-content>
-          <div id="Spotify" class="tab-pane active"> 
-            <p>
+          <div id="Spotify" class="tab-pane active">
+            <h1 class="mt-4">
+              <i class="fa fa-spotify"></i> &nbsp | &nbsp
               Spotify
-            </p>
+          </h1>
           </div>
-  
-          <div id="YouTube" class="tab-pane"> 
-            <p>
+
+          <!-- YouTube -->
+          <div id="YouTube" class="tab-pane">
+            <h1 class="mt-4">
+              <i class="fa fa-youtube"></i> &nbsp | &nbsp
               YouTube
-            </p>
+            </h1>
+            <br/>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Si3zwb0YIEU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+          <!-- Apple Music -->
+          <div id="Apple" class="tab-pane">
+            <h1 class="mt-4">
+              <i class="fa fa-apple"></i> &nbsp | &nbsp
+              Apple Music
+          </h1>
+
+          </div>
+
+          <!-- Amazon Music -->
+          <div id="Amazon" class="tab-pane">
+            <h1 class="mt-4">
+                <i class="fa fa-amazon"></i> &nbsp | &nbsp
+                Amazon Music
+            </h1>
+
+          </div>
+
+          <!-- Google Music -->
+          <div id="Google" class="tab-pane">
+            <h1 class="mt-4">
+              <i class="fa fa-google"></i> &nbsp | &nbsp
+              Google Play Music
+          </h1>
+          <br/>
+          <a href='https://play.google.com/music/m/T2iblvh2au5avak3c6s77rwkqsq?t=Project1_-_xLogan&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-mu-PartBadge-Mar2515-1'><img alt='Listen on Google Play Music' src='https://play.google.com/intl/en_us/badges/static/images/badges-music/en_badge_web_music.png'/></a>
+          </div>
+
+          <!-- Instagram -->
+          <div id="Instagram" class="tab-pane">
+            <h1 class="mt-4">
+              <i class="fa fa-instagram"></i> &nbsp | &nbsp
+              Instagram
+          </h1>
+          </div>
+
+          <!-- Facebook -->
+          <div id="Facebook" class="tab-pane">
+            <h1 class="mt-4">
+                <i class="fa fa-facebook"></i> &nbsp | &nbsp
+                Facebook
+            </h1>
+            <br/>
+            <iframe
+              src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FxLoganMusic&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
+              width="500" height="600" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+              allowTransparency="true" allow="encrypted-media"></iframe>
+
+            <div class="fb-page" data-href="https://www.facebook.com/xLoganMusic" data-tabs="timeline" data-width=""
+              data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
+              data-show-facepile="false">
+              <blockquote cite="https://www.facebook.com/xLoganMusic" class="fb-xfbml-parse-ignore">
+                <a href="https://www.facebook.com/xLoganMusic">xLogan</a>
+              </blockquote>
+            </div>
           </div>
           
-          <div id="Apple" class="tab-pane"> 
-            <p>
-              AppleMusic
-            </p>
-          </div>
-  
-          <div id="Amazon" class="tab-pane"> 
-            <p>
-              AmazonMusic
-            </p>
-          </div>
-  
-          <div id="Google" class="tab-pane"> 
-            <p>
-              GoogleMusic
-            </p>
-          </div>
-  
-          <div id="Instagram" class="tab-pane"> 
-            <p>
-              Instagram
-            </p>
-          </div>
-  
-          <div id="Facebook" class="tab-pane"> 
-            <p>
-              Facebook
-            </p>
-          </div>
-  
-          <div id="LinkedIn" class="tab-pane"> 
-            <p>
+          <!-- LinkedIn -->
+          <div id="LinkedIn" class="tab-pane">
+            <h1 class="mt-4">
+              <i class="fa fa-linkedin"></i> &nbsp | &nbsp
               LinkedIn
-            </p>
+          </h1>
           </div>
+
         </div>
       </div>
     </div>
@@ -152,18 +197,10 @@
 
   <!-- Menu Toggle Script -->
   <script>
-    $("#menu-toggle").click(function(e) {
+    $("#menu-toggle").click(function (e) {
       e.preventDefault();
       $("#wrapper").toggleClass("toggled");
     });
-  </script>
-
-  <script>
-    $('.btn').click(function() {
-	    $('#content div').hide();
-      var target = '#' + $(this).data('target');
-      $(target).show();
-    })
   </script>
 
 </body>
