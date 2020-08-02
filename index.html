@@ -25,63 +25,75 @@
   <!-- Facebook Plugin -->
   <div id="fb-root"></div>
   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0"
-    nonce="szYI7MZY"></script>
-
-
+    nonce="szYI7MZY">
+  </script>
 
   <!-- Page Content -->
   <div class="d-flex" id="wrapper">
 
     <!-- Sidebar -->
-    <div class="bg-dark border-right text-light nav-tabs" id="sidebar-wrapper">
+    <div class="bg-dark border-right border-dark text-light nav-tabs" id="sidebar-wrapper" style="box-shadow: 8px 8px 6px -6px #999">
       <div class="sidebar-heading list-group-flush">
-        xLogan
+        Artist Profiles
       </div>
-
-      <div class="nav nav-tabs list-group ">
-
-        <a href="#Spotify" data-toggle="tab" class="active list-group-item list-group-item-action bg-dark text-light">
-          <i class="fa fa-spotify"></i> &nbsp | &nbsp
+      
+      <div class="list-group list-group-flush">
+        <a href="#" class="list-group-item list-group-item-action bg-dark text-light">
+          <i class="fa fa-spotify" style="width: 20px;"></i> &nbsp | &nbsp
           Spotify
         </a>
 
-        <a href="#YouTube" data-toggle="tab" class="list-group-item list-group-item-action bg-dark text-light">
-          <i class="fa fa-youtube"></i> &nbsp | &nbsp
+        <a href="#" class="list-group-item list-group-item-action bg-dark text-light">
+          <i class="fa fa-youtube" style="width: 20px;"></i> &nbsp | &nbsp
           Youtube
         </a>
 
-        <a href="#Apple" data-toggle="tab" class="list-group-item list-group-item-action bg-dark text-light">
-          <i class="fa fa-apple"></i> &nbsp | &nbsp
+        <a href="https://music.apple.com/us/artist/xlogan/1525976952" class="list-group-item list-group-item-action bg-dark text-light">
+          <i class="fa fa-apple" style="width: 20px;"></i> &nbsp | &nbsp
           Apple Music
         </a>
 
-        <a href="#Amazon" data-toggle="tab" class="list-group-item list-group-item-action bg-dark text-light">
-          <i class="fa fa-amazon"></i> &nbsp | &nbsp
+        <a href="#" class="list-group-item list-group-item-action bg-dark text-light">
+          <i class="fa fa-amazon" style="width: 20px;"></i> &nbsp | &nbsp
           Amazon Music
         </a>
 
-        <a href="#Google" data-toggle="tab" class="list-group-item list-group-item-action bg-dark text-light">
-          <i class="fa fa-google"></i> &nbsp | &nbsp
+        <a href="https://play.google.com/music/listen#/sr/%22xLogan%22" class="list-group-item list-group-item-action bg-dark text-light">
+          <i class="fa fa-google" style="width: 20px;"></i> &nbsp | &nbsp
           Google Play Music
         </a>
 
-        <a href="#Instagram" data-toggle="tab" class="list-group-item list-group-item-action bg-dark text-light">
-          <i class="fa fa-instagram"></i> &nbsp | &nbsp
+        <a href="https://soundcloud.com/xloganmusic" class="list-group-item list-group-item-action bg-dark text-light">
+          <i class="fa fa-soundcloud" style="width: 20px;"></i> &nbsp | &nbsp
+          SoundCloud
+        </a>
+
+        <a href="https://www.deezer.com/en/artist/102701952" class="list-group-item list-group-item-action bg-dark text-light">
+          <i class="fa fa-bar-chart" style="width: 20px;"></i> &nbsp | &nbsp
+          Deezer
+        </a>
+      </div>
+      <br/>
+
+      <div class="sidebar-heading list-group-flush">
+        Social Media
+      </div>
+
+      <div>
+        <a href="https://www.facebook.com/LoganOggie/" class="list-group-item list-group-item-action bg-dark text-light">
+          <i class="fa fa-instagram" style="width: 20px;"></i> &nbsp | &nbsp
           Instagram
         </a>
 
-        <a href="#Facebook" data-toggle="tab" class="list-group-item list-group-item-action bg-dark text-light">
-          <i class="fa fa-facebook"></i> &nbsp | &nbsp
+        <a href="https://www.instagram.com/loganoggie/" class="list-group-item list-group-item-action bg-dark text-light">
+          <i class="fa fa-facebook" style="width: 20px;"></i> &nbsp | &nbsp
           Facebook
         </a>
 
-        <a href="#LinkedIn" data-toggle="tab" class="list-group-item list-group-item-action bg-dark text-light">
-          <i class="fa fa-linkedin"></i> &nbsp | &nbsp
+        <a href="https://www.linkedin.com/in/logan-nielsen/" class="list-group-item list-group-item-action bg-dark text-light">
+          <i class="fa fa-linkedin" style="width: 20px;"></i> &nbsp | &nbsp
           LinkedIn
         </a>
-
-
-
       </div>
     </div>
     <!-- /#sidebar-wrapper -->
@@ -90,98 +102,27 @@
     <div id="page-content-wrapper">
 
       <!-- Menu Toggler -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-        <button class="btn btn-light" id="menu-toggle">
+      <nav class="navbar navbar-expand-lg navbar-dark navbar-static-top bg-dark border-bottom shadow-md" style="box-shadow: 0 8px 8px -6px #999">
+        <button class="btn btn-dark" id="menu-toggle">
           <span class="navbar-toggler-icon"></span>
         </button>
+        <h1 class="text-white-50">
+          &nbsp xLogan
+        </h1>
       </nav>
 
       <!-- Profile Tab Contents -->
-      <div class="container-fluid">
-        <br />
-        <!-- Spotify -->
-        <div class=tab-content>
-          <div id="Spotify" class="tab-pane active">
-            <h1 class="mt-4">
-              <i class="fa fa-spotify"></i> &nbsp | &nbsp
-              Spotify
-          </h1>
-          </div>
-
+      <div style="text-align: center; margin: auto; height: 90vh; overflow: auto;">
           <!-- YouTube -->
-          <div id="YouTube" class="tab-pane">
+          <div class="container">
             <h1 class="mt-4">
-              <i class="fa fa-youtube"></i> &nbsp | &nbsp
-              YouTube
+              Project1
             </h1>
-            <br/>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Si3zwb0YIEU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-
-          <!-- Apple Music -->
-          <div id="Apple" class="tab-pane">
-            <h1 class="mt-4">
-              <i class="fa fa-apple"></i> &nbsp | &nbsp
-              Apple Music
-          </h1>
-
-          </div>
-
-          <!-- Amazon Music -->
-          <div id="Amazon" class="tab-pane">
-            <h1 class="mt-4">
-                <i class="fa fa-amazon"></i> &nbsp | &nbsp
-                Amazon Music
-            </h1>
-
-          </div>
-
-          <!-- Google Music -->
-          <div id="Google" class="tab-pane">
-            <h1 class="mt-4">
-              <i class="fa fa-google"></i> &nbsp | &nbsp
-              Google Play Music
-          </h1>
-          <br/>
-          <a href='https://play.google.com/music/m/T2iblvh2au5avak3c6s77rwkqsq?t=Project1_-_xLogan&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-mu-PartBadge-Mar2515-1'><img alt='Listen on Google Play Music' src='https://play.google.com/intl/en_us/badges/static/images/badges-music/en_badge_web_music.png'/></a>
-          </div>
-
-          <!-- Instagram -->
-          <div id="Instagram" class="tab-pane">
-            <h1 class="mt-4">
-              <i class="fa fa-instagram"></i> &nbsp | &nbsp
-              Instagram
-          </h1>
-          </div>
-
-          <!-- Facebook -->
-          <div id="Facebook" class="tab-pane">
-            <h1 class="mt-4">
-                <i class="fa fa-facebook"></i> &nbsp | &nbsp
-                Facebook
-            </h1>
-            <br/>
-            <iframe
-              src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FxLoganMusic&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
-              width="500" height="600" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-              allowTransparency="true" allow="encrypted-media"></iframe>
-
-            <div class="fb-page" data-href="https://www.facebook.com/xLoganMusic" data-tabs="timeline" data-width=""
-              data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
-              data-show-facepile="false">
-              <blockquote cite="https://www.facebook.com/xLoganMusic" class="fb-xfbml-parse-ignore">
-                <a href="https://www.facebook.com/xLoganMusic">xLogan</a>
-              </blockquote>
-            </div>
+            <iframe width="350" height="197" src="https://www.youtube.com/embed/Si3zwb0YIEU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           
-          <!-- LinkedIn -->
-          <div id="LinkedIn" class="tab-pane">
-            <h1 class="mt-4">
-              <i class="fa fa-linkedin"></i> &nbsp | &nbsp
-              LinkedIn
-          </h1>
-          </div>
+          <br/>
+          <hr/>
 
         </div>
       </div>
